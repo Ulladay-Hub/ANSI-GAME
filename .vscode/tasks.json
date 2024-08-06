@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build",
+        "type": "shell",
+        "command": "make",
+        "args": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "windows": {
+          "command": "mingw32-make"
+        }
+      },
+      {
+        "label": "Clean",
+        "type": "shell",
+        "command": "make",
+        "args": ["clean"],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        },
+        "problemMatcher": ["$gcc"],
+        "windows": {
+          "command": "mingw32-make",
+          "args": ["clean"]
+        }
+      }
+    ]
+  }
+  
