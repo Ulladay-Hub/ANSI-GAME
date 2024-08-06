@@ -1,4 +1,4 @@
-#include "include/ansi_game.h"
+#include "ansi_game.h"
 #include <iostream>
 
 ANSIgame::ANSIgame() {}
